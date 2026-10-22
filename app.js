@@ -49,7 +49,7 @@
       if (gallery.scrollWidth > gallery.clientWidth) start();
     };
     gallery.querySelectorAll('img').forEach(image => image.addEventListener('load', ready, { once: true }));
-    if ([...gallery.images].every(image => image.complete)) ready();
+    if ([...gallery.querySelectorAll('img')].every(image => image.complete)) ready();
   });
 
   const setupFaq = () => document.querySelectorAll('.faq-question').forEach(button => button.addEventListener('click', () => {
