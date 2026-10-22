@@ -1,0 +1,8 @@
+  let currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }, 1100); // ganti gambar setiap 3 detik
