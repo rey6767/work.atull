@@ -2,7 +2,7 @@
   const config = {
     links: {
       whatsapp: '',
-      telegram: 'https://t.me/worldbussines01?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
+      telegram: 'https://t.me/workatull',
       instagram: 'https://www.instagram.com/work.atull?knvt=dGxjaDRhdnhkNDlj&utm_source=qr'
     }
   };
