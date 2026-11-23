@@ -1,9 +1,9 @@
 (() => {
   const config = {
     links: {
-      whatsapp: 'https://wa.me/message/EX4OM5U6N6S5G1',
+      whatsapp: '',
       telegram: 'https://t.me/worldbussines01?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
-      instagram: 'https://www.instagram.com/world.bussines01/?hl=id'
+      instagram: 'https://www.instagram.com/work.atull?knvt=dGxjaDRhdnhkNDlj&utm_source=qr'
     }
   };
 
@@ -14,6 +14,13 @@
       '[data-instagram]': config.links.instagram
     };
     Object.entries(links).forEach(([selector, url]) => document.querySelectorAll(selector).forEach(link => {
+      if (!url) {
+        link.href = '#';
+        link.removeAttribute('target');
+        link.removeAttribute('rel');
+        link.addEventListener('click', event => event.preventDefault());
+        return;
+      }
       link.href = url;
       link.target = '_blank';
       link.rel = 'noopener';
@@ -77,9 +84,6 @@
   };
 
   const setupReveal = () => {
-    const year = document.getElementById('year');
-    if (year) year.textContent = new Date().getFullYear();
-    document.querySelectorAll('.legal-gallery img').forEach(image => { image.loading = 'eager'; });
     if (!('IntersectionObserver' in window)) return;
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -90,7 +94,13 @@
     document.querySelectorAll('.section, .package-card, .benefit-item, .step').forEach(element => observer.observe(element));
   };
 
+  const setYear = () => {
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  };
+
   setLinks();
+  setYear();
   setupGalleries();
   setupFaq();
   setupFloatingChat();
