@@ -34,7 +34,7 @@ h2 { margin-bottom: 18px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.08
 .hero::after { position: absolute; right: -110px; bottom: -220px; width: 450px; height: 450px; border: 1px solid rgba(78, 110, 93, .16); border-radius: 50%; content: ''; }
 .nav { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; padding-block: 20px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 1rem; text-decoration: none; }
-.brand img { width: 42px; height: 42px; object-fit: cover; border: 2px solid var(--surface); border-radius: 50%; box-shadow: 0 4px 12px rgba(44, 53, 50, .08); }
+.brand img { width: 42px; height: 42px; object-fit: cover; object-position: 50% 45%; border: 2px solid var(--surface); border-radius: 50%; box-shadow: 0 4px 12px rgba(44, 53, 50, .08); }
 .brand b { color: var(--sage-deep); }
 .nav-instagram { color: var(--ink); font-size: .85rem; font-weight: 700; text-decoration: none; }
 .nav-instagram span { color: var(--mist-deep); font-size: 1.1rem; }
@@ -54,7 +54,7 @@ h2 { margin-bottom: 18px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.08
 .hero-points { display: flex; flex-wrap: wrap; gap: 14px 22px; margin-top: 28px; color: #46534f; font-size: .84rem; font-weight: 500; }
 .hero-visual { position: relative; display: grid; place-items: center; min-height: 440px; }
 .hero-logo { position: relative; z-index: 1; display: grid; place-items: center; width: min(75vw, 330px); aspect-ratio: 1; border: 14px solid rgba(255, 255, 255, .82); border-radius: 50%; background: var(--surface); box-shadow: 0 22px 46px rgba(44, 53, 50, .12); }
-.hero-logo img { width: 86%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
+.hero-logo img { width: 86%; aspect-ratio: 1; object-fit: cover; object-position: 50% 45%; border-radius: 50%; }
 .hero-orbit { position: absolute; width: min(90vw, 430px); aspect-ratio: 1; border: 1px solid rgba(78, 110, 93, .22); border-radius: 50%; }
 .orbit-two { width: min(75vw, 350px); transform: rotate(35deg); border-color: rgba(76, 104, 126, .28); }
 .hero-badge { position: absolute; z-index: 2; padding: 11px 14px; color: var(--ink); font-size: .8rem; font-weight: 800; background: rgba(255, 255, 255, .94); border: 1px solid var(--line); border-radius: 9px; box-shadow: var(--shadow); }
@@ -135,7 +135,7 @@ h2 { margin-bottom: 18px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.08
 .steps-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
 .step { min-width: 0; padding: 18px 14px; border-top: 3px solid var(--sage-pastel); }
 .step:nth-child(even) { border-top-color: var(--mist-pastel); }
-.step img, .step-icon { width: 44px; height: 44px; margin-bottom: 16px; object-fit: cover; border-radius: 50%; }
+.step img, .step-icon { width: 44px; height: 44px; margin-bottom: 16px; object-fit: cover; object-position: 50% 45%; border-radius: 50%; }
 .step-icon { display: grid; place-items: center; font-size: 1.6rem; background: var(--sage-tint); }
 .step:nth-child(even) .step-icon { background: var(--mist-tint); }
 .step b { display: block; color: var(--sage-deep); font-size: .72rem; }
@@ -163,7 +163,7 @@ h2 { margin-bottom: 18px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.08
 .faq-item.open .faq-answer p { padding-bottom: 18px; }
 
 .final-cta { padding: 100px 20px; color: var(--ink); text-align: center; background: linear-gradient(130deg, var(--sage-pastel) 0%, #eff4f2 52%, var(--mist-pastel) 100%); }
-.final-cta img { width: 80px; height: 80px; object-fit: cover; margin: 0 auto 20px; border: 4px solid var(--surface); border-radius: 50%; box-shadow: var(--shadow); }
+.final-cta img { width: 80px; height: 80px; object-fit: cover; object-position: 50% 45%; margin: 0 auto 20px; border: 4px solid var(--surface); border-radius: 50%; box-shadow: var(--shadow); }
 .final-cta .eyebrow { color: var(--sage-deep); }
 .final-cta h2 { max-width: 650px; margin-inline: auto; }
 .final-cta > .container > p:not(.eyebrow) { max-width: 580px; margin-inline: auto; color: #46534f; }
