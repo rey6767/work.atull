@@ -1,7 +1,7 @@
 (() => {
   const config = {
     links: {
-      whatsapp: '',
+      whatsapp: 'https://wa.me/6287773634682',
       telegram: 'https://t.me/workatull',
       instagram: 'https://www.instagram.com/work.atull?knvt=dGxjaDRhdnhkNDlj&utm_source=qr'
     }
